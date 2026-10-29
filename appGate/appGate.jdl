@@ -1,0 +1,15 @@
+
+entity Employee {
+  employeeCode String required unique maxlength(30),
+  fullName String required maxlength(150),
+  position String maxlength(100),
+  department String maxlength(150),
+  phone String maxlength(30),
+  email String maxlength(150),
+  licensePlate String maxlength(30),
+  faceImagePath String maxlength(500)
+}
+
+dto Employee with mapstruct
+service Employee with serviceClass
+paginate Employee with pagination

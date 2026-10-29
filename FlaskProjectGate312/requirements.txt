@@ -1,0 +1,4 @@
+flask
+fast-alpr[onnx]
+opencv-python-headless<5
+certifi
